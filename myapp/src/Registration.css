@@ -1,0 +1,180 @@
+/* Container centers the form */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 120px); /* Adjust based on header+footer height */
+  padding: 15px;
+  background: #fff;
+  box-sizing: border-box;
+  margin: 0 auto;
+  flex-direction: column;
+}
+
+/* Registration form styles */
+.registration-form {
+  width: 420px;
+  background-color: #fff;
+  border: 2px solid #000; /* black border */
+  border-radius: 8px;
+  padding: 30px;
+  box-sizing: border-box;
+  box-shadow: 0 0 10px rgba(0,0,0,0.15);
+  position: relative;
+}
+
+/* Heading */
+.registration-form h1 {
+  margin-bottom: 25px;
+  font-weight: 900;
+  font-size: 1.8rem;
+  color: #000;
+  text-align: center;
+}
+
+/* Form group spacing */
+.form-group {
+  margin-bottom: 18px;
+}
+
+/* Labels */
+.form-group label {
+  display: block;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 8px;
+  text-transform: capitalize;
+}
+
+/* Inputs and textarea style */
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 1rem;
+  border: 1.5px solid #000;
+  border-radius: 6px;
+  box-sizing: border-box;
+  background: #fff;
+  color: #000;
+  transition: border-color 0.2s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #555;
+}
+
+/* OTP container with input and button aligned */
+.otp-container {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.otp-container button {
+  padding: 10px 18px;
+  background-color: #000;
+  border: none;
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.otp-container button:hover {
+  background-color: #333;
+}
+
+/* Submit button */
+button[type="submit"] {
+  width: 100%;
+  padding: 14px 0;
+  background-color: #000;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #333;
+}
+
+/* Error messages */
+.error-message {
+  color: #cc0000;
+  font-weight: 700;
+  font-size: 0.9rem;
+  margin-top: 6px;
+  text-align: left;
+}
+
+/* PDF file input styling */
+input[type="file"] {
+  border: none;
+  color: #000;
+}
+
+/* Modal styles for success message */
+.modal {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 25px 30px;
+  border-radius: 10px;
+  max-width: 400px;
+  width: 90%;
+  box-sizing: border-box;
+  text-align: center;
+  position: relative;
+  color: #000;
+  font-weight: 700;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 22px;
+  font-weight: 900;
+  cursor: pointer;
+  color: #000;
+  background: none;
+  border: none;
+}
+
+/* Language buttons container */
+.language-buttons {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.language-buttons button {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  margin: 0 8px;
+  padding: 8px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 700;
+  transition: background-color 0.2s ease;
+}
+
+.language-buttons button:hover {
+  background-color: #333;
+}

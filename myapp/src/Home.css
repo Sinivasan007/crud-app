@@ -1,0 +1,128 @@
+/* Home.css */
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+  padding: 30px 15px; /* Added padding to top & bottom */
+  box-sizing: border-box;
+  width: 100%;
+}
+
+/* Navigation styling */
+nav {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+nav a, nav button {
+  color: #000000;
+  background: none;
+  border: none;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 8px 16px;
+  margin: 0 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+nav a:hover, nav button:hover {
+  background-color:#040cb5c6 ;
+  color: white;
+}
+
+/* Shared container style for About Us, PDF Reader, and Extra Content */
+.about-us, .pdf-container, .extra-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;  /* center horizontally */
+  justify-content: center;
+  width: 100%;
+  max-width: 600px; /* unified max width */
+  background-color: #fff;
+  padding: 24px 28px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(24, 78, 112, 0.1);
+  margin: 20px 0;
+  color: #222;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+/* Headings for sections */
+.about-us h2, .pdf-container h2, .extra-content h2 {
+  font-weight: 700;
+  font-size: 1.7rem;
+  margin-bottom: 18px;
+  color: #040cb5c6;
+}
+
+/* Paragraphs in About Us & Extra Content */
+.about-us p, .extra-content ul {
+  font-size: 1.1rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* PDF Reader input styling */
+.pdf-container input {
+  margin-bottom: 18px;
+  padding: 10px;
+  border: 1px solid #36bfc8;
+  border-radius: 7px;
+  font-size: 1rem;
+  width: 100%;
+}
+
+/* PDF Reader additional text */
+.pdf-container p {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+/* Extra Content List style */
+.extra-content ul {
+  list-style: disc inside;
+  padding-left: 0;
+  margin: 0;
+  width: 100%; /* Ensure the list spans container width */
+  text-align: left;
+  max-width: 500px; /* Optional max width for better readability */
+  margin: 0 auto;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 600px) {
+  .about-us, .pdf-container, .extra-content {
+    max-width: 100%;
+    padding: 16px;
+    margin: 12px 0;
+  }
+  .home-container {
+    padding: 15px 10px;
+  }
+}
+
+/* Image container styles */
+.crud-image-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 30px 0 10px 0;
+}
+
+.crud-image {
+  max-width: 550px;
+  width: 100%;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.13);
+  padding: 20px;
+  object-fit: contain;
+  display: block;
+}

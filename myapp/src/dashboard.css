@@ -1,0 +1,104 @@
+/* dashboard.css */
+
+.dashboard-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent background color */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.dashboard-container h1 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.user-details {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.user-details p {
+  margin: 10px 0;
+}
+
+.user-details strong {
+  color: #555;
+}
+
+.edit-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.edit-form input,
+.edit-form textarea {
+  width: 80%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.edit-form button {
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.edit-form button.update-button {
+  background-color: #4caf50;
+  color: white;
+}
+
+.edit-form button.cancel-button {
+  background-color: #f44336;
+  color: white;
+}
+
+button.logout-button,
+button.edit-button,
+button.delete-button {
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+}
+
+button.logout-button {
+  background-color: #ff5722;
+}
+
+button.delete-button {
+  background-color: #f44336;
+}
+.dashboard-button {
+  background-color: #007bff; /* Bootstrap blue */
+  color: white;
+  border: none;
+  padding: 10px 22px;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.dashboard-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  color: white;
+}
